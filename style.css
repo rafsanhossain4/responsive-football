@@ -101,7 +101,7 @@ text-align: justify;
 /* table section start */
 table{
   border-collapse: collapse; 
- margin-left:140px ; 
+  margin-left:140px ; 
 }
 
 
@@ -120,18 +120,31 @@ text-align: center;
 
  /* Contact with us start */
 .section{
-  display: flex;  
+  display: flex;
+  background-color: #a8e6cf;
+  padding-top: 30px; 
+  padding-bottom: 50px; 
+  margin: 0 50px; 
+  border-radius: 18px;
+  box-shadow: 10px 10px 20px #547569;
 }
-.action{
-  height:220px ;  
+
+form{
+  height:223px ;  
   width: 300px;
  margin-left: 100px; 
  border: 2px solid gray ;
  border-radius:7px ; 
  padding-left:20px ;
- font-size: 25px;
+ font-size: 24px;
  
 }
+
+input{
+    padding: 5px 0;
+    background-color: #a8e6cf;
+}
+
 .about{
    text-align: center; 
 }
@@ -143,7 +156,7 @@ text-align: center;
 
 .footer-area{
     width: 50%;
-    margin: 30px auto ;
+    margin: 60px auto ;
 }
 .logo{
     margin: 10px auto;
@@ -172,10 +185,35 @@ footer p{
 
 /* mobile devices */
 
-@media only screen and (max-width:688px){
+@media only screen and (max-width:1700px){
     .container{
         display: block;
         margin: 20px auto;
+    }
+
+    .top h1 {
+        width: 80%;
+        font-size: 150px;
+    }
+
+    .top a {
+        padding: 15px 25px;
+        font-size: 50px;
+    }
+
+    .top a i {
+        font-size: 45px;
+        padding-left: 10px;
+    }
+
+    .banner {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+
+    .banner img {
+        width: 82%;
+        height: auto;
     }
 
     .info {
@@ -194,4 +232,56 @@ footer p{
         height: auto;
         margin: 0 auto;
     }
+
+    .section {
+        display: block;
+        width: 62%;
+        margin: 0 auto;
+    }
+
+    .table-data h1 {
+        font-size: 50px;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 40px auto;
+    }
+
+    td, th {
+        font-size: 33px;
+    }
+
+    .about h1 {
+        font-size: 50px;
+    }
+
+    form {
+        height: auto;
+        width: 68%;
+        font-size: 40px;
+        text-align: left;
+        padding: 10px 63px;
+    }
+
+    input {
+        padding: 18px 66px;
+        background-color: #a8e6cf;
+        font-size: 32px;
+    }
+
+    button {
+        font-size: 33px;
+        padding: 10px 15px;
+    }
+
+    .footer-area {
+        width: 70%;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 30px;
+    }
+
 }
